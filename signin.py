@@ -26,7 +26,7 @@ inajax = '&inajax=1'
 
 def run(form_data):
     s = requests.Session()
-    s.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36'})
+    s.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36'})
     headers = {"Content-Type": "text/html", 'Connection': 'close'}
     user_resp = s.get(user_url,headers=headers)
     login_text = re.findall('action="(.*?)"', user_resp.text)
